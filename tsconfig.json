@@ -1,0 +1,16 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    // "forceConsistentCasingInFileNames": false,
+    "module": "ESNext",
+    "baseUrl": ".",
+  },
+  "include": [
+    "./",
+    ".eslintrc.js"
+, ".commitlintrc"  ],
+  "exclude": [
+    "node_modules",
+  ],
+}
