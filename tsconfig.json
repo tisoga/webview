@@ -5,6 +5,11 @@
     // "forceConsistentCasingInFileNames": false,
     "module": "ESNext",
     "baseUrl": ".",
+    "paths": {
+      "@components/*": [
+        "src/_components/*"
+      ],
+    }
   },
   "include": [
     "./",
