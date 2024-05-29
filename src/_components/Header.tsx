@@ -5,9 +5,11 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 type HeaderProps = {
   titlePage: string[]
   onPressArrow: () => void
+  fullName: string
+  email: string
 }
 
-const Header = ({ titlePage, onPressArrow }: HeaderProps) => {
+const Header = ({ titlePage, onPressArrow, fullName, email }: HeaderProps) => {
   const [isDropDownShow, setDropDown] = useState<boolean>(false)
 
   return (
@@ -40,8 +42,8 @@ const Header = ({ titlePage, onPressArrow }: HeaderProps) => {
               <Icon name='account' size={50} color='#DCE5F1' style={styles.dropdownIcon} />
             </View>
             <View style={styles.dropdownTextContainer}>
-              <Text style={styles.dropdownTextName}>MoonYoung Choi</Text>
-              <Text style={styles.dropdownTextEmail}>choimy@chainverse.co.kr</Text>
+              <Text style={styles.dropdownTextName}>{fullName}</Text>
+              <Text style={styles.dropdownTextEmail}>{email}</Text>
             </View>
           </View>
           <View style={styles.dropdownContent}>
